@@ -1,4 +1,8 @@
 <?php
+session_start();
+
+include("connection.php");
+include("functions.php");
 
 ?>
 
@@ -16,6 +20,7 @@
             border-radius: 5px;
             padding: 4px;
             border: solid thick rebeccapurple;
+            width: 100%;
         }
 
         #button {
@@ -25,6 +30,11 @@
             background-color: rebeccapurple;
             border-radius: 5px;
         }
+
+        #button:hover {
+            opacity: 70%;
+        }
+
 
         #box{
             background-color: grey;
@@ -37,8 +47,13 @@
             align-items: center;
         }
 
+        a {
+            color: white; 
+            text-decoration: none;
+        }
+
         a:hover {
-            color: rebeccapurple;
+            opacity: 50%;
         }
 
     </style>
@@ -52,7 +67,7 @@
 
             <input id="button" type="submit" value="Login"><br><br>
 
-            <a style="color: white; text-decoration: none;" href="signup.php">Sign Up</a>
+            <a href="signup.php">Click To Sign Up</a>
         </form>
     </div>
     
