@@ -41,6 +41,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <style type="text/css">
@@ -60,17 +61,6 @@ session_start();
             border-radius: 5px;
         }
 
-        #box{
-            background-color: grey;
-            margin: auto;
-            width: 300px;
-            padding: 20px;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         a {
             color: white; 
             text-decoration: none;
@@ -81,6 +71,10 @@ session_start();
         }
 
     </style>
+
+    <div id="header">
+        <h1>Le Website</h1>
+    </div>
 
     <div id="box">
 

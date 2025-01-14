@@ -13,8 +13,12 @@ $user_data = check_login($connection);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div id="header">
+        <h1>Le Website</h1>
+    </div>
     <a href="logout.php">Logout</a>
     <h1>Le index page</h1>
 
