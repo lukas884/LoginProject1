@@ -23,7 +23,7 @@ $user_data = check_login($connection);
     <h1>Le index page</h1>
 
     <br>
-    Hello, Username
+    Welcome, <?php echo $user_data['user_name']; ?>!
     
 </body>
 </html>

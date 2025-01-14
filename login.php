@@ -4,6 +4,46 @@ session_start();
 include("connection.php");
 include("functions.php");
 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL); 
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        //something was posted
+        $user_name = $_POST['user_name'];
+        $password = $_POST['password'];
+
+        if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+        {
+            //read from db
+            $query = "select * from `users` where user_name = '$user_name' limit 1";
+            
+            if ($result = mysqli_query($connection, $query)) {
+                if($result){
+                    $result = mysqli_query($connection, $query);
+                    if($result && mysqli_num_rows($result) > 0)
+                    {
+                        $user_data = mysqli_fetch_assoc($result);
+                        if ($user_data['password'] === $password){
+                            $_SESSION['user_id'] = $user_data['user_id'];
+                            header("Location: index.php");
+                            die;
+
+                        }
+                    }
+                }
+                echo "Username or password invalid";
+            } else {
+                echo "Error: " . mysqli_error($connection);
+            }
+        
+        }else
+        {
+            echo "Username or password invalid";
+        }
+    }
+
 ?>
 
 <!DOCTYPE html>
