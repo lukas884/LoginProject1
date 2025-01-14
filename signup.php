@@ -4,6 +4,35 @@ session_start();
     include("connection.php");
     include("functions.php");
 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL); 
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+        //something was posted
+        $user_name = $_POST['user_name'];
+        $password = $_POST['password'];
+
+        if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+        {
+            //save to db
+            $user_id = random_num(20);
+            $query = "insert into `users` (user_id, user_name, password) values ('$user_id', '$user_name', '$password')";
+            
+            if (mysqli_query($connection, $query)) {
+                header("Location: login.php");
+                die;
+            } else {
+                echo "Error: " . mysqli_error($connection);
+            }
+        
+        }else
+        {
+            echo "Username or password invalid";
+        }
+    }
+
 ?>
 
 <!DOCTYPE html>
