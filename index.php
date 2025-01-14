@@ -17,13 +17,17 @@ $user_data = check_login($connection);
 </head>
 <body>
 <div id="header">
+    <a id="logout" href="logout.php">Logout</a>
         <h1>Le Website</h1>
     </div>
-    <a href="logout.php">Logout</a>
+
+<div id="content"> 
     <h1>Le index page</h1>
 
     <br>
     Welcome, <?php echo $user_data['user_name']; ?>!
+
+    </div>  
     
 </body>
 </html>
