@@ -19,15 +19,15 @@ $user_data = check_login($connection);
 <div id="header">
     <a id="logout" href="logout.php">Logout</a>
         <h1>Le Website</h1>
-    </div>
+</div>
 
 <div id="content"> 
     <h1>Le index page</h1>
 
     <br>
-    Welcome, <?php echo $user_data['user_name']; ?>!
+    <h3>Welcome, <?php echo $user_data['user_name']; ?>!</h3>
 
-    </div>  
+</div>  
     
 </body>
 </html>
