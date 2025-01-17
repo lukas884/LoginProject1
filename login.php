@@ -8,6 +8,8 @@ include("functions.php");
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL); 
 
+    $error_message = '';
+
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         //something was posted
@@ -33,14 +35,14 @@ include("functions.php");
                         }
                     }
                 }
-                echo "Username or password invalid";
+                $error_message = "Username or password invalid";
             } else {
-                echo "Error: " . mysqli_error($connection);
+                $error_message = "Error: " . mysqli_error($connection);
             }
         
         }else
         {
-            echo "Username or password invalid";
+            $error_message = "Username or password invalid";
         }
     }
 
@@ -55,37 +57,6 @@ include("functions.php");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <style type="text/css">
-        #text{
-            height: 25px;
-            border-radius: 5px;
-            padding: 4px;
-            border: solid thick rebeccapurple;
-            width: 100%;
-        }
-
-        #button {
-            padding: 10px;
-            width: 100px;
-            color: white;
-            background-color: rebeccapurple;
-            border-radius: 5px;
-        }
-
-        #button:hover {
-            opacity: 70%;
-        }
-
-        a {
-            color: white; 
-            text-decoration: none;
-        }
-
-        a:hover {
-            opacity: 50%;
-        }
-
-    </style>
 
     <div id="header">
         <h1>Le Website</h1>
@@ -103,6 +74,12 @@ include("functions.php");
             <a href="signup.php">Click To Sign Up</a>
         </form>
     </div>
+
+    <?php if ($error_message): ?>
+    <div class="error__message" style="color: red;">
+        <?php echo $error_message; ?>
+    </div>
+<?php endif; ?>
     
 </body>
 </html>

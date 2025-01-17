@@ -8,6 +8,8 @@ session_start();
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL); 
 
+    $error_message = '';
+
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         //something was posted
@@ -24,12 +26,12 @@ session_start();
                 header("Location: login.php");
                 die;
             } else {
-                echo "Error: " . mysqli_error($connection);
+                $error_message = "Error: " . mysqli_error($connection);
             }
         
         }else
         {
-            echo "Username or password invalid";
+            $error_message = "Username or password invalid";
         }
     }
 
@@ -88,6 +90,12 @@ session_start();
             <a href="login.php">Click To Log In</a>
         </form>
     </div>
+
+    <?php if ($error_message): ?>
+    <div class="error__message" style="color: red;">
+        <?php echo $error_message; ?>
+    </div>
+<?php endif; ?>
     
 </body>
 </html>

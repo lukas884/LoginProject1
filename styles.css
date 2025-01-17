@@ -3,8 +3,6 @@ body {
     background-color: rgb(56, 51, 76);
 }
 
-
-
 #box{
     background-color: grey;
     margin: auto;
@@ -18,11 +16,49 @@ body {
     border-radius: 5px;
 }
 
+#box a {
+    color: white; 
+    text-decoration: none;
+}
+
+#box a:hover { 
+    opacity: 50%;
+}
+
+#text{
+    height: 25px;
+    border-radius: 5px;
+    padding: 4px;
+    border: solid thick rebeccapurple;
+    width: 100%;
+}
+
+#button {
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+}
+
+#button:hover {
+    opacity: 70%;
+}
+
+.error__message {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 3px 3px 10px;
+}
+
 #header {
     height: 80px;
     width: 100%;
     /*background-color: aquamarine;*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(meat1.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
