@@ -44,6 +44,7 @@ $user_data = check_login($connection);
 
     <div class="main__navbar">
         <h3>Articles:</h3>
+        <a href="article1.php">Test</a>
     </div>
 
     <div class="main__featured">
