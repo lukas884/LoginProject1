@@ -1,3 +1,10 @@
+body {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    background-color: rgb(56, 51, 76);
+}
+
+
+
 #box{
     background-color: grey;
     margin: auto;
@@ -14,20 +21,20 @@
 #header {
     height: 80px;
     width: 100%;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(meat1.jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
 #logout{
     text-decoration: underline;
-    color: black;
-    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
     font-size: 16px;
 }
 
@@ -40,14 +47,82 @@
     left: 50%;
     transform: translateX(-50%);
     font-style: italic;
+    text-shadow: -2px -2px 0px rgb(255, 255, 255), 
+    2px -2px 0px rgb(255, 255, 255), 
+    -2px  2px 0px rgb(255, 255, 255), 
+    2px  2px 0px rgb(255, 255, 255);
 }
 
-#content {
-    margin-left: 20px;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(76, 81, 81);
+    padding: 10px 0;
+    border-radius: 5px;
 }
 
-#content h1{
-    font-size: 40px;
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.navbar a:hover {
+    opacity: 70%;
+    font-size: 16px;
+    padding: 2px 15px;
+}
+
+
+.welcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(fruits1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.welcome p{
+    margin-left: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 20px;
+}
+
+.main__content {
+    display: flex;
+    height: 60vh;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(meat1.jpg);
+}
+
+.main__navbar {
+    width: 25%;
+    background-color: rgb(72, 62, 101);
+}
+
+.main__navbar h3 {
+    color: whitesmoke;
     text-decoration: underline;
-    text-shadow: 5px 5px 20px ;
+    margin-left: 10px;
+}
+
+.main__navbar a{
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.main__navbar a:hover {
+    opacity: 60%;
+}
+
+.main__featured {
+    width: 75%;
 }
