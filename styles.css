@@ -312,3 +312,28 @@ body {
 .footer__content a:hover{
     text-shadow: 3px 3px 10px rgb(15, 99, 15);
 }
+
+.contact__div {
+    display: flex;
+    height: 80vh;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(castle1.jpg);
+}
+
+.contact__content {
+    width: 40%;
+    background-color: rgb(26, 25, 30);
+}
+
+.contact__content p {
+    color: rgb(196, 193, 193);
+    margin: 10px 10px;
+    padding: 10px 10px;
+    line-height: 1.2;
+}
+
+.contact__page {
+    background-color: rgb(0, 0, 0);
+}

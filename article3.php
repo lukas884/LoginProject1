@@ -12,7 +12,7 @@ $user_data = check_login($connection);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soy Toxicity In Poultry Meat And Eggs</title>
+    <title>How Eating Raw Liver Opens Doors You Can't Unsee</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="meat_emoji.png">
 </head>
