@@ -5,3 +5,5 @@ Functionality done, next step is to add a bit more css. Goal is to make it look 
 
 20.01.2025
 Now it looks very different. To do: add simple profile page, fake about and contact, shop "under construction"
+
+About Page and Contact Page added now
