@@ -63,7 +63,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-radius: 5px;
 }
 
@@ -95,6 +95,7 @@ body {
     background-color: rgb(76, 81, 81);
     padding: 10px 0;
     border-radius: 5px;
+    margin: 0;
 }
 
 .navbar a{
@@ -118,7 +119,7 @@ body {
     width: 100%;
     border-radius: 5px;
     display: flex;
-    margin: 10px 0px;
+    margin: 0px 0px;
 }
 
 .welcome p{
@@ -151,8 +152,9 @@ body {
     color: whitesmoke;
     text-decoration: none;
     margin-bottom: 10px;
-    padding: 10px;
-    font-size: 18px;
+    padding: 0px 10px;
+    font-size: 16px;
+    margin-left: 15px;
 }
 
 .main__navbar a:hover {
@@ -161,4 +163,49 @@ body {
 
 .main__featured {
     width: 75%;
+}
+
+.main__featured p{
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.article__area {
+    height: 100vh;
+    background-color: rgb(68, 69, 105);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.article__area h2{
+    color: white;
+    margin-left: 20px;
+    padding-top: 12px;
+    padding-left: 0px 5px;
+    text-align: center;
+}
+
+.article__area h3{
+    color: white;
+    margin-left: 20px;
+    padding-left: 0px 5px;
+    text-align: center;
+}
+
+.article__area h4{
+    color: white;
+    margin-left: 20px;
+    padding-left: 0px 5px;
+    text-align: center;
+}
+
+.article__area p{
+    color: white;
+    margin: 0px 30px;
+    line-height: 1.2;
+    font-size: 16px;
 }

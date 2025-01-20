@@ -44,11 +44,14 @@ $user_data = check_login($connection);
 
     <div class="main__navbar">
         <h3>Articles:</h3>
-        <a href="article1.php">Test</a>
+        <a href="article1.php">Soy Toxicity In Poultry Meat And Eggs</a>
     </div>
 
     <div class="main__featured">
-
+        <p>"...health is the basic gift of all life - 
+            as the sun shines on everybody. Food, what one
+            does to it and what one eats, determines health." <br> <br>
+            - Aajonus Vonderplanitz</p>
     </div>
 
 </div>
