@@ -5,7 +5,7 @@ body {
 
 #box{
     background-color: grey;
-    margin: auto;
+    margin: 20px auto;
     width: 300px;
     padding: 20px;
     align-items: center;
@@ -14,6 +14,7 @@ body {
     align-items: center;
     box-shadow: 5px 5px 20px;
     border-radius: 5px;
+    
 }
 
 #box a {
@@ -86,7 +87,8 @@ body {
     text-shadow: -2px -2px 0px rgb(255, 255, 255), 
     2px -2px 0px rgb(255, 255, 255), 
     -2px  2px 0px rgb(255, 255, 255), 
-    2px  2px 0px rgb(255, 255, 255);
+    2px  2px 0px rgb(255, 255, 255), 
+    3px  3px 10px rgb(255, 255, 255);
 }
 
 .navbar {
@@ -181,6 +183,18 @@ body {
     line-height: 1;
 }
 
+@media (max-width: 860px){
+    .article__area {
+        height: 110vh;
+    }
+}
+
+@media (max-width: 720px){
+    .article__area {
+        height: 120vh;
+    }
+}
+
 .article__area h2{
     color: white;
     margin-left: 20px;
@@ -208,4 +222,35 @@ body {
     margin: 0px 30px;
     line-height: 1.2;
     font-size: 16px;
+}
+
+.main__footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(milk1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer__content{
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    line-height: 2;
+}
+
+.footer__content p{
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.footer__content a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 10px red;
+}
+
+.footer__content a:hover{
+    text-shadow: 3px 3px 10px rgb(15, 99, 15);
 }

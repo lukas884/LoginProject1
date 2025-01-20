@@ -55,6 +55,14 @@ $user_data = check_login($connection);
     </div>
 
 </div>
+
+<div class="main__footer">
+    <div class="footer__content">
+        <p>Get the all the Books, Workshops, Videos etc. at <a href="https://aajonus.online/" target="_blank">aajonus.online</a></p>
+        <p>Search through QnAs, Books and Workshops at <a href="https://aajonus.net" target="_blank">aajonus.net</a></p>
+        <p>Esoteric Knowledge, find it at <a href="http://exo-science.com/">exo-science.com</a></p>
+    </div>
+</div>
     
 </body>
 </html>
