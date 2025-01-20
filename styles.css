@@ -183,16 +183,54 @@ body {
     line-height: 1;
 }
 
-@media (max-width: 860px){
+.article__header {
+    font-size: 1rem;
+}
+
+.about__page .article__area {
+    height: 120vh;
+}
+
+.article3 .article__area {
+    height: 130vh ;
+}
+
+@media (max-width: 980px){
     .article__area {
         height: 110vh;
     }
+
+    .about__page .article__area {
+        height: 130vh;
+    }
+
+    .article3 .article__area {
+        height: 140vh ;
+    }
 }
 
-@media (max-width: 720px){
+@media (max-width: 880px){
     .article__area {
         height: 120vh;
     }
+
+    .about__page .article__area {
+        height: 140vh;
+    }
+
+    .article3 .article__area {
+        height: 150vh ;
+    }
+}
+
+.article__area h1{
+    color: white;
+    margin-left: 20px;
+    padding-top: 12px;
+    padding-left: 0px 5px;
+    text-align: center;
+    text-shadow: 3px 3px 14px rgb(0, 0, 0);
+    text-decoration: underline;
 }
 
 .article__area h2{
@@ -224,6 +262,25 @@ body {
     font-size: 16px;
 }
 
+.about__header {
+    height: 14vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(milk1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 1.4rem;
+}
+
+.about__content {
+    margin: 30px 30px;
+}
+
+.about__content p{
+    line-height: 1.2;
+    font-size: 17px;
+}
+
 .main__footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(milk1.jpg);
     background-position: center;
@@ -231,6 +288,7 @@ body {
     height: 20vh;
     border-radius: 5px;
     overflow: hidden;
+    padding-bottom: 15px;
 }
 
 .footer__content{

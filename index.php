@@ -46,6 +46,8 @@ $user_data = check_login($connection);
     <div class="main__navbar">
         <h3>Articles:</h3>
         <a href="article1.php">Soy Toxicity In Poultry Meat And Eggs</a>
+        <a href="article2.php"> Benzene, Cancer and Soft Drinks Connection</a>
+        <a href="article3.php">How Eating Raw Liver Opens Doors You Can't Unsee</a>
     </div>
 
     <div class="main__featured">
