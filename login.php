@@ -55,11 +55,12 @@ include("functions.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="meat_emoji.png">
 </head>
 <body>
 
     <div id="header">
-        <h1>Le Website</h1>
+        <h1>Raw.Meat</h1>
     </div>
 
     <div id="box">

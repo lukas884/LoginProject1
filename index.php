@@ -12,8 +12,9 @@ $user_data = check_login($connection);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le website</title>
+    <title>Raw.Meat</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="meat_emoji.png">
 </head>
 <body>
     
@@ -24,7 +25,7 @@ $user_data = check_login($connection);
 
 <div id="header">
     <a id="logout" href="logout.php">Logout</a>
-        <h1>Le Website</h1>
+        <h1>Raw.Meat</h1>
     <a id="logout" href="profile.php"><?php echo $user_data['user_name']; ?></a>
 </div>
 
@@ -60,7 +61,7 @@ $user_data = check_login($connection);
     <div class="footer__content">
         <p>Get the all the Books, Workshops, Videos etc. at <a href="https://aajonus.online/" target="_blank">aajonus.online</a></p>
         <p>Search through QnAs, Books and Workshops at <a href="https://aajonus.net" target="_blank">aajonus.net</a></p>
-        <p>Esoteric Knowledge, find it at <a href="http://exo-science.com/">exo-science.com</a></p>
+        <p>Esoteric Knowledge, find it at <a href="http://exo-science.com/" target="_blank">exo-science.com</a></p>
     </div>
 </div>
     

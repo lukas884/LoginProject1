@@ -12,8 +12,9 @@ $user_data = check_login($connection);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le website</title>
+    <title>Soy Toxicity In Poultry Meat And Eggs</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="meat_emoji.png">
 </head>
 <body>
     
@@ -24,7 +25,7 @@ $user_data = check_login($connection);
 
 <div id="header">
     <a id="logout" href="logout.php">Logout</a>
-        <h1>Le Website</h1>
+        <h1>Raw.Meat</h1>
     <a id="logout" href="profile.php"><?php echo $user_data['user_name']; ?></a>
 </div>
 
