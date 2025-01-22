@@ -79,6 +79,18 @@ $user_data = check_login($connection);
     </p>
 </div>
 
+<div class="footer">
+    <div class="footer__content__profile">
+        <p class="footer__warning">Do not look behind you while using this page.</p>
+        <button class="edit__button">Edit Profile</button>
+        <p class="footer__links">
+            <a href="#" class="footer__link">Return to raw.meat</a> | 
+            <a href="#" class="footer__link">Get lost in the void</a> | 
+            <a href="#" class="footer__link">Nothing here</a>
+        </p>
+    </div>
+</div>
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const timeKey = 'siteTimeSpent';
@@ -103,6 +115,7 @@ $user_data = check_login($connection);
         }, 1000);
     });
 </script>
+
     
 </body>
 </html>

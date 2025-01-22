@@ -10,3 +10,11 @@ About Page and Contact Page added now
 
 22.01.2025
 Shop Page added now
+
+profile page done. might still be edited, not sure about the vibe
+
+future article names: 
+"Milk of the Abyss: Raw Dairy and the Secrets It Unlocks"
+"Rotten But Divine: High Meat and the Gateway to Other Realms"
+
+added "all articles" page. not nearly done but got started
