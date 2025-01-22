@@ -379,3 +379,99 @@ body {
   .shop__text p {
     font-size: 16px;
   }
+
+  .profile__main {
+    background: #121212;
+    color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.profile__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile__avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+    filter: grayscale(100%) contrast(150%) brightness(80%);
+    object-fit: cover;
+}
+
+.profile__info {
+    margin-left: 15px;
+}
+
+.profile__name {
+    font-size: 1.5em;
+    color: #ff5555;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.profile__bio p {
+    font-size: 1em;
+    margin-top: 15px;
+    line-height: 1.5;
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+}
+
+.profile__bio p:hover {
+    background: #2a2a2a;
+    color: #ff5555;
+    transition: 0.3s;
+}
+
+.profile__time-spent {
+    overflow: hidden;
+    padding: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(castle1.jpg);
+    border-radius: 5px;
+    color: #e5e5e5;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    position: relative;
+}
+
+.profile__time-spent h3 {
+    font-size: 1.2em;
+    color: #ff5555;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.profile__time-spent .time__details {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.time__details .time__hours,
+.time__details .time__minutes,
+.time__details .time__seconds {
+    color: #ff5555;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.time__details .time__comment {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaaaaa;
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0% { color: #aaaaaa; }
+    50% { color: #ff5555; text-shadow: 0 0 5px #ff0000; }
+    100% { color: #aaaaaa; }
+}

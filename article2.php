@@ -95,6 +95,23 @@ days for 2-­6 years, depending on how much soft drinks
 they consumed.</p>
 
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const timeKey = 'siteTimeSpent';
+        const startTime = Date.now();
+        const savedTime = parseInt(localStorage.getItem(timeKey), 10) || 0;
+
+        setInterval(() => {
+            const elapsedTime = savedTime + (Date.now() - startTime); 
+            const hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+            const seconds = Math.floor((elapsedTime / 1000) % 60);
+
+            localStorage.setItem(timeKey, elapsedTime.toString());
+        }, 1000);
+    });
+</script>
     
 </body>
 </html>
