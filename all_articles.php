@@ -38,8 +38,10 @@ $user_data = check_login($connection);
 </div>
 
 <div class="all__articles">
-    <div class="article__list">
+    <div class="article__header">
         <h2>All Articles</h2>
+        </div>
+    <div class="article__list">
         <ul>
             <li>
                 <a href="article1.php">Soy Toxicity In Poultry Meat And Eggs</a>
@@ -62,7 +64,21 @@ $user_data = check_login($connection);
             <li>
                 <a href="article2.php">Benzene, Cancer and Soft Drinks Connection</a>
             </li>
+            <li>
+                <a href="#" class="fake__article">The Last Light</a>
+            </li>
+            <li>
+                <a href="article4.php">Milk of the Abyss: Raw Dairy and the Secrets It Unlocks</a>
+            </li>
         </ul>
+    </div>
+</div>
+
+<div class="main__footer">
+    <div class="footer__content">
+        <p>Get the all the Books, Workshops, Videos etc. at <a href="https://aajonus.online/" target="_blank">aajonus.online</a></p>
+        <p>Search through QnAs, Books and Workshops at <a href="https://aajonus.net" target="_blank">aajonus.net</a></p>
+        <p>Esoteric Knowledge, find it at <a href="http://exo-science.com/" target="_blank">exo-science.com</a></p>
     </div>
 </div>
 

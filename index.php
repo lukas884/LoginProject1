@@ -48,6 +48,7 @@ $user_data = check_login($connection);
         <a href="article1.php">Soy Toxicity In Poultry Meat And Eggs</a>
         <a href="article2.php"> Benzene, Cancer and Soft Drinks Connection</a>
         <a href="article3.php">How Eating Raw Liver Opens Doors You Can't Unsee</a>
+        <a href="article4.php">Milk of the Abyss: Raw Dairy and the Secrets It Unlocks</a>
 
         <h2><a href="all_articles.php">All Articles Here</a></h2>
     </div>

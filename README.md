@@ -18,3 +18,8 @@ future article names:
 "Rotten But Divine: High Meat and the Gateway to Other Realms"
 
 added "all articles" page. not nearly done but got started
+
+23.01.2025
+Styling for the all articles page is done, adding the footer and one or two other articles
+
+website may be done, everything i planned to add has been added

@@ -550,7 +550,6 @@ body {
 
 
 .all__articles {
-    padding: 20px;
     background: #282132;
     overflow: hidden;
     border-radius: 5px;
@@ -560,19 +559,31 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
+    padding-bottom: 15px;
 }
 
-.article__list h2 {
-    font-size: 2em;
-    color: #0000ff;
-    text-align: center;
+.article__header{
+    height: 14vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(fruits1.jpg);
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 20px;
+}
+
+.article__header h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 20px 20px;
+    text-shadow: 3px 3px 3px black;
 }
 
 .article__list ul {
     list-style-type: disc;
-    margin: 0;
-    padding: 0 20px;
+    margin-left: 10px;
+    padding: 0 30px;
 }
 
 .article__list li {
@@ -580,11 +591,13 @@ body {
 }
 
 .article__list a {
-    color: #ff0000;
+    color: white;
     text-decoration: underline;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .article__list a:hover {
-    color: #0000ff;
+    opacity: 70%;
+    font-style: italic;
 }
